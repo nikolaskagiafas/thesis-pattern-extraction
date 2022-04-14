@@ -1,0 +1,3 @@
+# Relationship Extractor
+Tool used to extract relationships. Compile using Maven (command: `mvn install`).  
+The tool can run using the command `java -jar RelationshipExtractor-0.1.jar path-to-repo`, where `path-to-repo` is the path (folder) to the repository for which the relationships are extracted (printed to stdout). One can also add the flag `includeUnknown` at the end in order to include also relationships to unknown (non-repo) classes (by default these relationships are not considered).

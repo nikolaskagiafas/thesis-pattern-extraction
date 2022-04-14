@@ -1,0 +1,14 @@
+bin/
+.project
+.settings
+.pydevproject
+.classpath
+clone_results/
+data/
+test/
+__pycache__/
+*.pyc
+*.pyd
+commit_recommendations/
+similarity_results/
+similarity_results_old/

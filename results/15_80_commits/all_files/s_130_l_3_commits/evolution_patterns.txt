@@ -1,0 +1,159 @@
+digraph G {
+
+splines=ortho
+node[shape=record,style=filled,fillcolor=gray95]
+edge[dir=back, arrowtail=empty]
+
+subgraph cluster_1{
+
+1[label = "{\"Normal\"\nClass A|...|...}"]
+2[label = "{\"Normal\"\nClass B|...|...}"]
+3[label = "{\"Normal\"\nClass C|...|...}"]
+1->2[arrowtail=odiamond, label = " + has"]
+3->1[arrowtail=vee, label = " + references"]
+}
+
+subgraph cluster_2{
+
+4[label = "{\"Normal\"\nClass A|...|...}"]
+5[label = "{\"Normal\"\nClass B|...|...}"]
+6[label = "{\"Normal\"\nClass C|...|...}"]
+4->5[arrowtail=odiamond, label = " + has"]
+4->6[arrowtail=odiamond, label = " + has"]
+}
+
+subgraph cluster_3{
+
+7[label = "{\"Normal\"\nClass A|...|...}"]
+8[label = "{\"Normal\"\nClass B|...|...}"]
+9[label = "{\"Normal\"\nClass C|...|...}"]
+10[label = "{\"Normal\"\nClass D|...|...}"]
+7->8[arrowtail=odiamond, label = " + has"]
+7->9[arrowtail=odiamond, label = " + has"]
+7->10[arrowtail=odiamond, label = " + has"]
+}
+
+subgraph cluster_4{
+
+11[label = "{\"Normal\"\nClass A|...|...}"]
+12[label = "{\"Normal\"\nClass B|...|...}"]
+13[label = "{\"Normal\"\nClass C|...|...}"]
+11->12[arrowtail=odiamond, label = " + has"]
+12->13[arrowtail=odiamond, label = " + has"]
+}
+
+subgraph cluster_5{
+
+14[label = "{\"Normal\"\nClass A|...|...}"]
+15[label = "{\"Normal\"\nClass B|...|...}"]
+16[label = "{\"Normal\"\nClass C|...|...}"]
+14->15[arrowtail=odiamond, label = " + has"]
+14->16[arrowtail=odiamond, label = " - has"]
+}
+
+subgraph cluster_6{
+
+17[label = "{\"Normal\"\nClass A|...|...}"]
+18[label = "{\"Normal\"\nClass B|...|...}"]
+19[label = "{\"Abstracted\"\nClass C|...|...}"]
+17->18[arrowtail=odiamond, label = " + has"]
+17->19[arrowtail=odiamond, label = " + has"]
+}
+
+subgraph cluster_7{
+
+20[label = "{\"Normal\"\nClass A|...|...}"]
+21[label = "{\"Normal\"\nClass B|...|...}"]
+22[label = "{\"Normal\"\nClass C|...|...}"]
+20->21[arrowtail=diamond, label = " + creates"]
+20->22[arrowtail=diamond, label = " + creates"]
+}
+
+subgraph cluster_8{
+
+23[label = "{\"Normal\"\nClass A|...|...}"]
+24[label = "{\"Normal\"\nClass B|...|...}"]
+25[label = "{\"Normal\"\nClass C|...|...}"]
+26[label = "{\"Normal\"\nClass D|...|...}"]
+23->24[arrowtail=diamond, label = " + creates"]
+23->25[arrowtail=diamond, label = " + creates"]
+23->26[arrowtail=diamond, label = " + creates"]
+}
+
+subgraph cluster_9{
+
+27[label = "{\"Normal\"\nClass A|...|...}"]
+28[label = "{\"Normal\"\nClass B|...|...}"]
+29[label = "{\"Normal\"\nClass C|...|...}"]
+27->28[arrowtail=diamond, label = " + creates"]
+27->29[arrowtail=diamond, label = " - creates"]
+}
+
+subgraph cluster_10{
+
+30[label = "{\"Normal\"\nClass A|...|...}"]
+31[label = "{\"Normal\"\nClass B|...|...}"]
+32[label = "{\"Normal\"\nClass C|...|...}"]
+30->31[arrowtail=diamond, label = " + creates"]
+30->32[arrowtail=odiamond, label = " + has"]
+}
+
+subgraph cluster_11{
+
+33[label = "{\"Normal\"\nClass A|...|...}"]
+34[label = "{\"Normal\"\nClass B|...|...}"]
+35[label = "{\"Normal\"\nClass C|...|...}"]
+36[label = "{\"Normal\"\nClass D|...|...}"]
+33->34[arrowtail=diamond, label = " + creates"]
+33->35[arrowtail=odiamond, label = " + has"]
+33->36[arrowtail=odiamond, label = " + has"]
+}
+
+subgraph cluster_12{
+
+37[label = "{\"Normal\"\nClass A|...|...}"]
+38[label = "{\"Normal\"\nClass B|...|...}"]
+39[label = "{\"Normal\"\nClass C|...|...}"]
+37->38[arrowtail=diamond, label = " - creates"]
+37->39[arrowtail=diamond, label = " - creates"]
+}
+
+subgraph cluster_13{
+
+40[label = "{\"Normal\"\nClass A|...|...}"]
+41[label = "{\"Normal\"\nClass B|...|...}"]
+42[label = "{\"Normal\"\nClass C|...|...}"]
+40->41[arrowtail=diamond, label = " - creates"]
+40->42[arrowtail=odiamond, label = " - has"]
+}
+
+subgraph cluster_14{
+
+43[label = "{\"Normal\"\nClass A|...|...}"]
+44[label = "{\"Normal\"\nClass B|...|...}"]
+45[label = "{\"Normal\"\nClass C|...|...}"]
+43->44[arrowtail=odiamond, label = " - has"]
+43->45[arrowtail=odiamond, label = " - has"]
+}
+
+subgraph cluster_15{
+
+46[label = "{\"Normal\"\nClass A|...|...}"]
+47[label = "{\"Normal\"\nClass B|...|...}"]
+48[label = "{\"Normal\"\nClass C|...|...}"]
+49[label = "{\"Normal\"\nClass D|...|...}"]
+46->47[arrowtail=odiamond, label = " - has"]
+46->48[arrowtail=odiamond, label = " - has"]
+46->49[arrowtail=odiamond, label = " - has"]
+}
+
+subgraph cluster_16{
+
+50[label = "{\"Normal\"\nClass A|...|...}"]
+51[label = "{\"Normal\"\nClass B|...|...}"]
+52[label = "{\"Normal\"\nClass C|...|...}"]
+51->50[arrowtail=vee, label = " + references"]
+52->50[arrowtail=vee, label = " + references"]
+}
+
+}
